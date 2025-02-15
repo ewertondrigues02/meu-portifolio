@@ -370,3 +370,26 @@ i.menu-mobile
     color: rgb(50, 182, 50);
 }
 
+@font-face {
+    font-family: 'Vivaldi';
+    src: url('../fonts/VintageParty-FreeVersion.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.footer {
+
+    bottom: 10px;     
+    margin-right: 40px;      
+    background-color: transparent;
+    text-align: right; 
+    padding: 12px;
+}
+
+.signature {
+    font-family: 'Vivaldi', cursive; 
+    font-size: 2.5rem;  
+    color: black; 
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.2); 
+}
+
