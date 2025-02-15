@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./static/boostrap/css/bootstrap.css">
+  <link rel="stylesheet" href="/static/boostrap/css/bootstrap.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./static/style.css">
+  <link rel="stylesheet" href="/static/style.css">
   <link rel="icon" type="image/png" href="./static/img/icon-pagina.png">
   <!--falta imagens -->
 
@@ -19,7 +19,7 @@
   <i class="bi bi-list menu-mobile"></i>
   <aside id="header">
     <section class="profile">
-      <img src="./static/img/Minha_foto.jpg" alt="fot do Ewerton">
+      <img src="../static/img/Minha_foto.jpg" alt="fot do Ewerton">
       <h1>Ewerton Rodrigues</h1>
       <div class="social-links mt-4 text-center">
         <a target="_blank" href="https://www.linkedin.com/in/ewerton-rodrigues/"><i class="bi bi-linkedin"></i></a>
@@ -45,6 +45,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#portfolio"><i class="bi bi-collection"></i> Potifólio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#certificados"><i class="bi bi-award"></i> Certificado</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contato"><i class="bi bi-envelope"></i> Contato</a>
@@ -96,7 +99,7 @@
 
       <div class="row mt-4">
         <div class="col-md-4">
-          <img class="minha-foto img-fluid shadow" src="./static/img/Minha_foto.jpg" alt="Foto do Ewerton"
+          <img class="minha-foto img-fluid shadow" src="../static/img/Minha_foto.jpg" alt="Foto do Ewerton"
             data-anime="left">
         </div>
         <div class="col-md-8" data-anime="right">
@@ -414,7 +417,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                   <div class="col">
                     <div class="card">
-                      <img src="./static/img/banco-digital.gif" class="card-img-top" alt="Banco Digital">
+                      <img src="../static/img/banco-digital.gif" class="card-img-top" alt="Banco Digital">
                       <div class="card-body">
                         <h5 class="card-title">Banco Digital</h5>
                         <p class="card-text">Em desenvolvimento - Banco digital implementado em Java, utilizando o
@@ -427,7 +430,7 @@
 
                   <div class="col">
                     <div class="card">
-                      <img src="./static/img/agendamentos.gif" class="card-img-top" alt="Agendamentos de Consultas">
+                      <img src="../static/img/agendamentos.gif" class="card-img-top" alt="Agendamentos de Consultas">
                       <div class="card-body">
                         <h5 class="card-title">Agendamentos de Consultas</h5>
                         <p class="card-text">Sistema de agendamento médico baseado em microsserviços: Doctors, Patients
@@ -440,7 +443,7 @@
 
                   <div class="col">
                     <div class="card">
-                      <img src="./static/img/gestao-vendas.gif" class="card-img-top" alt="Gestão de Vendas">
+                      <img src="../static/img/gestao-vendas.gif" class="card-img-top" alt="Gestão de Vendas">
                       <div class="card-body">
                         <h5 class="card-title">Gestão de Vendas</h5>
                         <p class="card-text">Sistema completo de gestão de vendas com CRUD para Cliente, Produto e
@@ -458,7 +461,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                   <div class="col">
                     <div class="card">
-                      <img src="./static/img/microservico.gif" class="card-img-top" alt="Conversão de Moedas">
+                      <img src="../static/img/microservico.gif" class="card-img-top" alt="Conversão de Moedas">
                       <div class="card-body">
                         <h5 class="card-title">Conversão de Moedas</h5>
                         <p class="card-text">Sistema de microserviços para conversão de moedas, projetado para
@@ -471,7 +474,7 @@
 
                   <div class="col">
                     <div class="card">
-                      <img src="./static/img/web-services.gif" class="card-img-top" alt="Web Services">
+                      <img src="../static/img/web-services.gif" class="card-img-top" alt="Web Services">
                       <div class="card-body">
                         <h5 class="card-title">Web Services</h5>
                         <p class="card-text">Modelo de domínio robusto com entidades inter-relacionadas para simulação
@@ -485,7 +488,7 @@
 
                   <div class="col">
                     <div class="card">
-                      <img src="./static/img/gestao-pedidos.gif" class="card-img-top" alt="Gestão de Pedidos">
+                      <img src="../static/img/gestao-pedidos.gif" class="card-img-top" alt="Gestão de Pedidos">
                       <div class="card-body">
                         <h5 class="card-title">Gestão de Pedidos</h5>
                         <p class="card-text">Microserviço de pedidos com comunicação via RabbitMQ entre os serviços
@@ -512,7 +515,283 @@
             </button>
           </div>
         </div>
+
+        <!-- Section Certificado -->
+
       </section>
+
+      <section id="certificados" class="container mt-5">
+        <h2 class="pb-4">Certificados</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+          <!-- Certificado 1 -->
+          <div class="col">
+            <div class="card certificado-card" data-bs-toggle="modal" data-bs-target="#certificadoModal1">
+              <img src="./static/img/analista-infra.png" class="card-img-top" alt="Certificado SQL">
+              <div class="card-body">
+                <h5 class="card-title text-center">Analista de Infraestrutura Microsoft</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificado 2 -->
+          <div class="col">
+            <div class="card certificado-card" data-bs-toggle="modal" data-bs-target="#certificadoModal2">
+              <img src="./static/img/udemy-gestao-agil.png" class="card-img-top" alt="Certificado Backend Java">
+              <div class="card-body">
+                <h5 class="card-title text-center">Gestão Agil Scrum, Kanban e Nexus</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificado 3 -->
+          <div class="col">
+            <div class="card certificado-card" data-bs-toggle="modal" data-bs-target="#certificadoModal3">
+              <img src="./static/img/udemy-programacao-orientada-objetos.png" class="card-img-top"
+                alt="Certificado Backend Java">
+              <div class="card-body">
+                <h5 class="card-title text-center">Programação Orientada a Objetos com Java</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificado 4 -->
+          <div class="col">
+            <div class="card certificado-card" data-bs-toggle="modal" data-bs-target="#certificadoModal4">
+              <img src="./static/img/udemy-spring-boot-expert.png" class="card-img-top" alt="Spring Boot Expert">
+              <div class="card-body">
+                <h5 class="card-title text-center">Spring Boot Expert</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificado 5 -->
+          <div class="col">
+            <div class="card certificado-card" data-bs-toggle="modal" data-bs-target="#certificadoModal5">
+              <img src="./static/img/udemy-analise-requisitos.jpg" class="card-img-top" alt="Análise de Requisitos">
+              <div class="card-body">
+                <h5 class="card-title text-center">Análise de Requisitos</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificado 6 -->
+          <div class="col">
+            <div class="card certificado-card" data-bs-toggle="modal" data-bs-target="#certificadoModal6">
+              <img src="./static/img/udemy-design-patterns-java.jpg" class="card-img-top" alt="Design Patterns">
+              <div class="card-body">
+                <h5 class="card-title text-center">Design Patterns</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Adicione mais certificados conforme necessário -->
+        </div>
+      </section>
+
+
+
+      <!-- Modal para Certificado 1 -->
+      <div class="modal fade" id="certificadoModal1" tabindex="-1" aria-labelledby="certificadoModal1Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="certificadoModal1Label">SQL para Profissionais Analíticos</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./static/img/analista-infra.png" class="img-fluid mb-3" alt="Certificado SQL">
+              <h5>Conteúdo do Curso:</h5>
+              <ul>
+                <li>Planejamento do Active Directory</li>
+                <li>Planejamento do Nome do Active Directory</li>
+                <li>Instalação do Active Directory</li>
+                <li>Instalação do DNS</li>
+                <li>Criação de Usuários e Grupos no Active Directory</li>
+                <li>Instalação do DHCP</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal para Certificado 2 -->
+      <div class="modal fade" id="certificadoModal2" tabindex="-1" aria-labelledby="certificadoModal2Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="certificadoModal2Label">Gestão Agil Scrum, Kanban e Nexus</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./static/img/udemy-gestao-agil.png" class="img-fluid mb-3" alt="Certificado Gestão Agil">
+              <h5>Conteúdo do Curso:</h5>
+              <ul>
+                <li>Introdução às Metodologias Ágeis</li>
+                <li>Fundamentos do Scrum</li>
+                <li>Papéis no Scrum</li>
+                <li>Eventos do Scrum</li>
+                <li>Artefatos do Scrum</li>
+                <li>Kanban: Conceitos e Aplicações</li>
+                <li>Implementação do Kanban</li>
+                <li>Escalando o Ágil com Nexus</li>
+                <li>Gestão de Riscos em Projetos Ágeis</li>
+                <li>Liderança e Motivação em Times Ágeis</li>
+                <li>Comunicação e Resolução de Conflitos</li>
+                <li>Contratos Ágeis e Inteligência Emocional</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal para Certificado 3 -->
+
+      <div class="modal fade" id="certificadoModal3" tabindex="-1" aria-labelledby="certificadoModal3Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="certificadoModal3Label">Programação Orientada a Objetos com Java</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./static/img/udemy-programacao-orientada-objetos.png" class="img-fluid mb-3"
+                alt="Programação  Orientada a Objetos Java">
+              <h5>Conteúdo do Curso:</h5>
+              <ul>
+                <li>Lógica de Programação e Algoritmos</li>
+                <li>Sintaxe da Linguagem Java</li>
+                <li>Classes, Atributos e Métodos</li>
+                <li>Construtores, Sobrecarga e Encapsulamento</li>
+                <li>Estruturas de Dados: Arrays e Coleções</li>
+                <li>Enumerações e Composição</li>
+                <li>Herança, Polimorfismo e Interfaces</li>
+                <li>Tratamento de Exceções</li>
+                <li>Generics</li>
+                <li>Programação Funcional e Expressões Lambda, Stream API</li>
+                <li>Manipulação de Arquivos</li>
+                <li>JDBC para Acesso a Dados Baseado em SQL</li>
+                <li>JavaFX para Interface Gráfica</li>
+                <li>Git/GitHub para Versionamento</li>
+                <li>Spring Boot</li>
+                <li>JPA/Hibernate para Acesso a Dados com Mapeamento Objeto-Relacional (ORM)</li>
+                <li>Maven para Gerenciamento de Dependências de Projeto</li>
+                <li>Spring Data JPA</li>
+                <li>Spring Data MongoDB</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal para Certificado 4 -->
+
+      <div class="modal fade" id="certificadoModal4" tabindex="-1" aria-labelledby="certificadoModal4Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="certificadoModal4Label">Spring Boot Expert</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./static/img/udemy-spring-boot-expert.png" class="img-fluid mb-3" alt="Spring Boot Expert">
+              <h5>Conteúdo do Curso:</h5>
+              <ul>
+                <li>Introdução ao Spring Boot</li>
+                <li>Configuração e Estrutura de Projetos</li>
+                <li>Injeção de Dependências e Controle de Fluxo</li>
+                <li>Programação Orientada a Objetos com Java</li>
+                <li>JPA (Java Persistence API) e Hibernate</li>
+                <li>Criação de APIs RESTful</li>
+                <li>Autenticação e Autorização com JWT (JSON Web Token)</li>
+                <li>Segurança com OAuth2</li>
+                <li>Testes Unitários e de Integração</li>
+                <li>Documentação de APIs com Swagger</li>
+                <li>Integração com Banco de Dados Relacional</li>
+                <li>Gerenciamento de Dependências com Maven</li>
+                <li>Utilização de Docker para Contêineres</li>
+                <li>Implantação na AWS (Amazon Web Services)</li>
+                <li>Monitoramento e Logging</li>
+                <li>Boas Práticas de Desenvolvimento</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Modal para Certificado 5 -->
+
+      <div class="modal fade" id="certificadoModal5" tabindex="-1" aria-labelledby="certificadoModal5Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="certificadoModal5Label">Análise de Requisitos</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./static/img/udemy-analise-requisitos.jpg" class="img-fluid mb-3" alt="Análise de Requisitos">
+              <h5>Conteúdo do Curso:</h5>
+              <ul>
+                <li>Introdução à Análise de Requisitos</li>
+                <li>Técnicas de Levantamento de Requisitos</li>
+                <li>Documentação de Requisitos</li>
+                <li>Modelagem de Processos de Negócio</li>
+                <li>Especificação de Casos de Uso</li>
+                <li>Validação e Verificação de Requisitos</li>
+                <li>Gerenciamento de Requisitos</li>
+                <li>Ferramentas para Análise de Requisitos</li>
+                <li>Boas Práticas de Desenvolvimento</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Modal para Certificado 6 -->
+
+      <div class="modal fade" id="certificadoModal6" tabindex="-1" aria-labelledby="certificadoModal6Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="certificadoModal6Label">Design Patterns</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./static/img/udemy-design-patterns-java.jpg" class="img-fluid mb-3" alt="Design Patterns">
+              <h5>Conteúdo do Curso:</h5>
+              <ul>
+                <li>Introdução aos Design Patterns</li>
+                <li>Princípios SOLID</li>
+                <li>Design Patterns Criacionais</li>
+                <li>Factory Method</li>
+                <li>Abstract Factory</li>
+                <li>Builder</li>
+                <li>Design Patterns Estruturais</li>
+                <li>Adapter</li>
+                <li>Bridge</li>
+                <li>Design Patterns Comportamentais</li>
+                <li>Chain of Responsibility</li>
+                <li>Cuidados ao Utilizar Design Patterns</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
 
 
       <section class="pt-5 pb-5" id="contato">

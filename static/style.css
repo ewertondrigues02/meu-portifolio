@@ -118,7 +118,7 @@ section#inicio
 
 section#sobre .minha-foto
 {
-    border-radius: 12px;
+    border-radius: 7px;
 }
 
 section#inicio h2
@@ -355,11 +355,38 @@ i.menu-mobile
     } 
 }
 
+#certificados .certificado-card {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(0.95);
+    
+}
+
+#certificados h2{
+
+    margin-left: 20px;
+    position: relative;
+}
+
+#certificados .certificado-card:hover {
+    transform: scale(1.0);
+    border-color: #149ddd;
+}
+
+.modal-body img {
+    border-radius: 10px;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+
 .link-portifolio {
     position: relative;
     z-index: 10; 
     text-decoration: none;
     text-transform: uppercase;
+    color: gray;
 }
 
 .link-portifolio:hover {
@@ -367,7 +394,7 @@ i.menu-mobile
     z-index: 10; 
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(50, 182, 50);
+    color: #149ddd;
 }
 
 @font-face {
@@ -392,4 +419,7 @@ i.menu-mobile
     color: black; 
     text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.2); 
 }
+
+
+
 
