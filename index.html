@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./static/boostrap/css/bootstrap.css">
+  <link rel="stylesheet" href="/static/boostrap/css/bootstrap.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./static/style.css">
+  <link rel="stylesheet" href="/static/style.css">
   <link rel="icon" type="image/png" href="./static/img/icon-pagina.png">
   <!--falta imagens -->
 
@@ -19,7 +19,7 @@
   <i class="bi bi-list menu-mobile"></i>
   <aside id="header">
     <section class="profile">
-      <img src="./static/img/Minha_foto.jpg" alt="fot do Ewerton">
+      <img src="../static/img/Minha_foto.jpg" alt="fot do Ewerton">
       <h1>Ewerton Rodrigues</h1>
       <div class="social-links mt-4 text-center">
         <a target="_blank" href="https://www.linkedin.com/in/ewerton-rodrigues/"><i class="bi bi-linkedin"></i></a>
@@ -44,7 +44,7 @@
           <a class="nav-link" href="#curriculo"><i class="bi bi-file-earmark"></i> Curriculo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#portifolio"><i class="bi bi-collection"></i> Potifólio</a>
+          <a class="nav-link" href="#portfolio"><i class="bi bi-collection"></i> Potifólio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contato"><i class="bi bi-envelope"></i> Contato</a>
@@ -96,7 +96,7 @@
 
       <div class="row mt-4">
         <div class="col-md-4">
-          <img class="minha-foto img-fluid shadow" src="./static/img/Minha_foto.jpg" alt="Foto do Ewerton"
+          <img class="minha-foto img-fluid shadow" src="../static/img/Minha_foto.jpg" alt="Foto do Ewerton"
             data-anime="left">
         </div>
         <div class="col-md-8" data-anime="right">
@@ -397,92 +397,72 @@
         </div>
       </div>
 
-    </section>
+      <section class="section-bg mt-5" id="portfolio">
+        <div class="container pb-5 pt-5" data-anime="left">
+          <h2 class="pb-4">Portfólio</h2>
 
-    <section class="section-bg mt-5" id="portifolio">
-      <div class="container pb-5 pt-5" data-anime="left">
+          <div id="carouselportifolio" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselportifolio" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselportifolio" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            </div>
 
-        <h2 class="pb-4">Potifólio</h2>
-
-        <div id="carouselportifolio" class="carousel carousel-dark slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselportifolio" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselportifolio" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-
-              <div class="row row-cols-1 row-cols-md-3 g-4">
-
-                <div class="col">
-                  <div class="card">
-                    <img src="../static/img/banco-digital.gif" class="card-img-top" alt="Plataforma Educacional">
-                    <div class="card-body">
-                      <h5 class="card-title">Banco Digital</h5>
-                      <p class="card-text">Em desenvolvimento - Banco digital implementado em Java, utilizando o
-                        ecossistema Spring Boot e explorando diferentes padrões de projeto como Camadas (Layered
-                        Architecture), Factory Method, Singleton e MVC.</p>
-                      <a class="link-portifolio" href="https://github.com/ewertondrigues02/banco-digital"
-                        target="_blank" rel="noopener noreferrer">Acessar Projeto</a>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card">
-                    <img src="../static/img/agendamentos.gif" class="card-img-top" alt="Plataforma Educacional">
-                    <div class="card-body">
-                      <h5 class="card-title">Agendamentos de Consultas</h5>
-                      <p class="card-text">O sistema de agendamento de consultas médicas é dividido em diversos
-                        microserviços: Doctors, Patients e Scheduling</p>
-                      <a class="link-portifolio" href="https://github.com/ewertondrigues02/agendamento-consultas"
-                        target="_blank" rel="noopener noreferrer">Acessar Projeto</a>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <img src="../static/img/banco-digital.gif" class="card-img-top" alt="Banco Digital">
+                      <div class="card-body">
+                        <h5 class="card-title">Banco Digital</h5>
+                        <p class="card-text">Em desenvolvimento - Banco digital implementado em Java, utilizando o
+                          Spring Boot e padrões de projeto como Factory Method, Singleton e MVC.</p>
+                        <a class="link-portifolio" href="https://github.com/ewertondrigues02/banco-digital"
+                          target="_blank" rel="noopener noreferrer">Acessar Projeto</a>
+                      </div>
                     </div>
                   </div>
 
                   <div class="col">
                     <div class="card">
-                      <img src="../static/img/gestao-vendas.gif" class="card-img-top" alt="Plataforma Educacional">
+                      <img src="../static/img/agendamentos.gif" class="card-img-top" alt="Agendamentos de Consultas">
+                      <div class="card-body">
+                        <h5 class="card-title">Agendamentos de Consultas</h5>
+                        <p class="card-text">Sistema de agendamento médico baseado em microsserviços: Doctors, Patients
+                          e Scheduling.</p>
+                        <a class="link-portifolio" href="https://github.com/ewertondrigues02/agendamento-consultas"
+                          target="_blank" rel="noopener noreferrer">Acessar Projeto</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card">
+                      <img src="../static/img/gestao-vendas.gif" class="card-img-top" alt="Gestão de Vendas">
                       <div class="card-body">
                         <h5 class="card-title">Gestão de Vendas</h5>
-                        <p class="card-text">sistema completo de gestão de vendas, desenvolvido como um projeto de
-                          estudo e prática de boas práticas de programação e tecnologias modernas. Ele implementa
-                          funcionalidades de CRUD (Create, Read, Update, Delete) para as entidades Cliente, Produto e
-                          Vendas, além de incluir diversos conceitos importantes de arquitetura e desenvolvimento.</p>
+                        <p class="card-text">Sistema completo de gestão de vendas com CRUD para Cliente, Produto e
+                          Vendas.</p>
                         <a class="link-portifolio"
                           href="https://github.com/ewertondrigues02/sistema-de-gestao-de-vendas" target="_blank"
                           rel="noopener noreferrer">Acessar Projeto</a>
                       </div>
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselportifolio"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselportifolio"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
                 </div>
               </div>
 
-              <!-- oi -->
               <div class="carousel-item" data-bs-interval="2000">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-
                   <div class="col">
                     <div class="card">
-                      <img src="../static/img/microservico.gif" class="card-img-top" alt="Plataforma Educacional">
+                      <img src="../static/img/microservico.gif" class="card-img-top" alt="Conversão de Moedas">
                       <div class="card-body">
                         <h5 class="card-title">Conversão de Moedas</h5>
-                        <p class="card-text">Este projeto demonstra a implementação de um sistema de microserviços para
-                          conversão de moedas, utilizando uma série de tecnologias modernas e robustas. O sistema é
-                          projetado para ser escalável, resiliente e fácil de manter.</p>
+                        <p class="card-text">Sistema de microserviços para conversão de moedas, projetado para
+                          escalabilidade e resiliência.</p>
                         <a class="link-portifolio" href="https://github.com/ewertondrigues02/micro-services-conversao"
                           target="_blank" rel="noopener noreferrer">Acessar Projeto</a>
                       </div>
@@ -491,13 +471,11 @@
 
                   <div class="col">
                     <div class="card">
-                      <img src="../static/img/web-services.gif" class="card-img-top" alt="Plataforma Educacional">
+                      <img src="../static/img/web-services.gif" class="card-img-top" alt="Web Services">
                       <div class="card-body">
                         <h5 class="card-title">Web Services</h5>
-                        <p class="card-text">O modelo de domínio inclui Produto, com atributos como ID, nome, descrição,
-                          preço, imageUrl e categorias, e uma relação muitos para muitos com Categoria. Pedido se
-                          relaciona com Item de Pedido, que, por sua vez, possui relações muitos para um com Produto e
-                          Pedido. Usuário está associado a pedidos.</p>
+                        <p class="card-text">Modelo de domínio robusto com entidades inter-relacionadas para simulação
+                          de um e-commerce.</p>
                         <a class="link-portifolio"
                           href="https://github.com/ewertondrigues02/web-services-escalaveis-com-spring-boot-jpa-e-hibernate"
                           target="_blank" rel="noopener noreferrer">Acessar Projeto</a>
@@ -507,94 +485,89 @@
 
                   <div class="col">
                     <div class="card">
-                      <img src="../static/img/gestao-pedidos.gif" class="card-img-top" alt="Plataforma Educacional">
+                      <img src="../static/img/gestao-pedidos.gif" class="card-img-top" alt="Gestão de Pedidos">
                       <div class="card-body">
                         <h5 class="card-title">Gestão de Pedidos</h5>
-                        <p class="card-text">Micro Serviço de para criação de pedidos com comunicação via mensageria
-                          usando o RabbitMQ onde o cliente faz o pedido e é enviado uma mensagem para os Serviços
-                          ´order-service´ e ´notification-service´</p>
+                        <p class="card-text">Microserviço de pedidos com comunicação via RabbitMQ entre os serviços
+                          order-service e notification-service.</p>
                         <a class="link-portifolio"
                           href="https://github.com/ewertondrigues02/micro-service-criacao-de-pedido" target="_blank"
                           rel="noopener noreferrer">Acessar Projeto</a>
                       </div>
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselportifolio"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselportifolio"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
                 </div>
               </div>
             </div>
 
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselportifolio"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselportifolio"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
+      </section>
 
-      </div>
 
-      </div>
+      <section class="pt-5 pb-5" id="contato">
 
-    </section>
+        <div class="container mb-5">
+          <h2 class="pt-3 pb-3">Contato</h2>
 
-    <section class="pt-5 pb-5" id="contato">
-
-      <div class="container mb-5">
-        <h2 class="pt-3 pb-3">Contato</h2>
-
-        <div class="row">
-          <div class="col-md-5 mt-5">
-            <div class="card p-5 shadow border-0" data-anime="up">
-              <div class="endereco">
-                <h4><i class="bi bi-geo-alt"></i>Localização</h4>
-                <p>Santa Catarina</p>
+          <div class="row">
+            <div class="col-md-5 mt-5">
+              <div class="card p-5 shadow border-0" data-anime="up">
+                <div class="endereco">
+                  <h4><i class="bi bi-geo-alt"></i>Localização</h4>
+                  <p>Santa Catarina</p>
+                </div>
+                <div class="email">
+                  <h4><i class="bi bi-envelpe"></i>E-mail</h4>
+                  <p>example.portifolio@gmail.com.br</p>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.4832027325087!2d-48.99557908524314!3d-26.47238258135813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94debf73cccd6283%3A0x13b93ba939d3e5a!2sR.%2028%20de%20Agosto%2C%202200%20-%20Centro%2C%20Guaramirim%20-%20SC%2C%2089270-000!5e0!3m2!1spt-BR!2sbr!4v1654447052424!5m2!1spt-BR!2sbr"
+                  width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
               </div>
-              <div class="email">
-                <h4><i class="bi bi-envelpe"></i>E-mail</h4>
-                <p>example.portifolio@gmail.com.br</p>
-              </div>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.4832027325087!2d-48.99557908524314!3d-26.47238258135813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94debf73cccd6283%3A0x13b93ba939d3e5a!2sR.%2028%20de%20Agosto%2C%202200%20-%20Centro%2C%20Guaramirim%20-%20SC%2C%2089270-000!5e0!3m2!1spt-BR!2sbr!4v1654447052424!5m2!1spt-BR!2sbr"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
-            </div>
-
-          </div>
-          <div class="col-md-7 mt-5">
-
-            <div class="card p-5 h-100 shadow border-0" data-anime="left">
-
-              <form class="row g-3">
-                <div class="col-md-6">
-                  <label for="nome" class="form-label">Nome: </label>
-                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
-                </div>
-                <div class="col-md-6">
-                  <label for="email" class="form-label">E-mail: </label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu E-mail">
-                </div>
-                <div class="col-12">
-                  <label for="mensagem" class="form-label">Mensagem: </label>
-                  <textarea type="text" class="form-control" id="mensagem" placeholder="Digite sua Mensagem"
-                    name="mensagem" rows="10"></textarea>
-                </div>
-                <div class="col-12 d-flex justify-content-center mt-4">
-                  <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                </div>
-              </form>
 
             </div>
+            <div class="col-md-7 mt-5">
+
+              <div class="card p-5 h-100 shadow border-0" data-anime="left">
+
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome: </label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">E-mail: </label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu E-mail">
+                  </div>
+                  <div class="col-12">
+                    <label for="mensagem" class="form-label">Mensagem: </label>
+                    <textarea type="text" class="form-control" id="mensagem" placeholder="Digite sua Mensagem"
+                      name="mensagem" rows="10"></textarea>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center mt-4">
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
           </div>
+
         </div>
 
-      </div>
-
-    </section>
+      </section>
   </main>
 
 
