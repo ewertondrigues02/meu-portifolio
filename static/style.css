@@ -355,22 +355,20 @@ i.menu-mobile
     } 
 }
 
+
 #certificados .certificado-card {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     transform: scale(0.95);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(20, 157, 221, 0.3);
     
-}
-
-#certificados h2{
-
-    margin-left: 20px;
-    position: relative;
 }
 
 #certificados .certificado-card:hover {
     transform: scale(1.0);
     border-color: #149ddd;
+    border-radius: 10px;
 }
 
 .modal-body img {
@@ -380,6 +378,10 @@ i.menu-mobile
     object-fit: cover;
 }
 
+.modal-body{
+
+    border-radius: 10px;
+}
 
 .link-portifolio {
     position: relative;
@@ -419,6 +421,16 @@ i.menu-mobile
     color: black; 
     text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.2); 
 }
+
+a {
+    text-decoration: none;
+    color: #007bff; 
+  }
+  a:hover {
+    text-decoration: underline; 
+  }
+
+
 
 
 
